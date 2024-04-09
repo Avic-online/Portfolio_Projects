@@ -3,9 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Homepage</title>
 </head>
 <body>
+    <!-- html code for navigation menu -->
+    <nav>
+        <ul class="sideBar">
+            <li onclick="hideSidebar()"><a><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">About Me</a></li>
+            <li><a href="#">Testimonials</a></li>
+            <li><a href="#"><button>Contact Me</button></a></li>
+        </ul>
+        <ul>
+            <li><a href="#" class="hoverer"><img src="images/Victor_Logo-01-preview.png" alt="logo of my Portfolio website"></a></li>
+            <li><a href="#" class="hideOnMobile hoverer">Home</a></li>
+            <li><a href="#" class="hideOnMobile hoverer">Portfolio</a></li>
+            <li><a href="#" class="hideOnMobile hoverer">About Me</a></li>
+            <li><a href="#" class="hideOnMobile hoverer">Testimonials</a></li>
+            <li><a href="#" class="hideOnMobile"><button class="contact-btn">Contact Me</button></a></li>
+        </ul>
+        <ul>
+            <li class="menu-btn" onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+    </nav>
+    <!-- end of the navigation -->
+
+    <!-- beginning of header -->
+
+    <header>
+        <div class="header1">
+            <div class="profession-ctn">
+                <p>Hey, I am Victor</p>
+                <h1 class="profession-h1">I create <strong> WebSites, Web-Applications</strong> and Digital Solution for businesses</h1>
+                <p>
+                    Digital Solutions i create comprises of high definition video,
+                    basic photoshop editing for websites, social media strategy and management, content writing
+                    and project management.
+                </p>
+
+            </div>
+            <a href="#"><button>Get in Touch</button></a>
+
+        </div>
+        <div class="header2">
+            <img src="" alt="This is one of Victor's professional photo">
+
+        </div>
+
+    </header>
     
+
+    <script src="js/main.js"></script>
 </body>
 </html>
