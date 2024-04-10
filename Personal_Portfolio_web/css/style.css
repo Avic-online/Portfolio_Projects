@@ -250,7 +250,6 @@ about {
     padding-left: 50px;
     padding-right: 50px;
     padding-top: 70px;
-    padding-bottom: 70px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -272,6 +271,112 @@ about {
 .About-img img{
     width: 100%;
     height: inherit;
+}
+
+/* beginning of the porfolio section */
+
+portfolio {
+    border: 3px solid black;
+    width: 100%;
+    height: auto;
+    background-color: #ffffff;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.port-1{
+    border: 1px solid black;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.port-2{
+    border: 1px solid blue;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.port-header {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.port1-btn {
+    height: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--primary-colorRed);
+    border: hidden;
+    border-radius: 4px;
+    padding: 6px 6px 6px 6px;
+}
+.port1-btn img {
+    width: 20%;
+}
+.port1-btn a {
+    text-decoration: none;
+    color: var(--primary-colorWhite);
+}
+.port1-btn:hover {
+    background-color: var(--primary-colorHeader);
+}
+.port2-card {
+    border: 1px dotted red;
+    width: 30%;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+
+}
+.port2-card img {
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
+}
+.port2-text {
+    width: 100%;
+    padding: 20px 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.portcard-btn {
+    width: 45%;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10px 10px 10px;
+    background-color: var(--primary-colorWhite);
+    border: 0.5px solid rgba(170, 169, 169, 0.549);
+    border-radius: 5px;
+}
+.portcard-btn > a {
+    text-decoration: none;
+}
+.portcard-btn > img {
+    width: 30%;
+    height: inherit;
+    padding: 10px 10px;
+}
+.portcard-btn:hover{
+    background-color: var(--primary-colorHeader);
+    cursor: pointer;
+}
+.portcard-btn a:hover {
+    color: var(--primary-colorWhite);
 }
 
 
