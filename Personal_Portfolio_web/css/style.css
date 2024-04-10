@@ -189,6 +189,91 @@ header {
     cursor: pointer;
     background-color: var(--primary-colorBody);
 }
+.header2 img {
+    width: 100%;
+    height: inherit;
+}
+
+/* beginning of skills section */
+
+skill {
+    border: 2px solid black;
+    width: 100%;
+    height: auto;
+    background-color: #ffffff;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    display: flex;
+    flex-direction:column;
+}
+.skill-head {
+    border: 1px solid black;
+    width: 60%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.skill-items {
+    border: 1px solid black;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #ffffff;
+}
+.skill-card{
+    border: 1px dotted black;
+    width: 22%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px 15px 15px 15px;
+    background-color: var(--primary-colorWhite);
+}
+.skill-card img {
+    width: 15%;
+    height: 30px;
+}
+
+/* beginning of the about me sesction of the home page */
+
+about {
+    border: 3px solid black;
+    width: 100%;
+    height: auto;
+    background-color: #ffffff;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.About-img{
+    border: 1px solid black;
+    width: 45%;
+    height: 500px;
+}
+.About-content {
+    border: 1px solid blue;
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.About-img img{
+    width: 100%;
+    height: inherit;
+}
+
 
 
   @media(max-width: 800px) {
