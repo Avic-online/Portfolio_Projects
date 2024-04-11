@@ -207,6 +207,7 @@ skill {
     padding-bottom: 70px;
     display: flex;
     flex-direction:column;
+    gap: 20px;
 }
 .skill-head {
     border: 1px solid black;
@@ -377,6 +378,65 @@ portfolio {
 }
 .portcard-btn a:hover {
     color: var(--primary-colorWhite);
+}
+
+/* beginning of testimony section */
+
+testimony {
+    border: 3px solid black;
+    width: 100%;
+    height: auto;
+    background-color: var(--primary-colorWhite);
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.test-head {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.test-item {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.test-card {
+    border: 1px solid rgba(0, 0, 0, 0.136);
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    padding: 15px 15px 15px 15px;
+    gap: 15px;
+    border-radius: 5px;
+}
+.test-card img {
+    width: 40%;
+    height: 20px;
+}
+.testifier {
+    width: 60%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.testifier img {
+    width: 30%;
+    height: 40px;
+}
+.testifier-text {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
 
 
