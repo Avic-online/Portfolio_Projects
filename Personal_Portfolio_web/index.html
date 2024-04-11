@@ -132,7 +132,7 @@
         <div class="port-1">
             <div class="port-header">
                 <p>Recent Projects</p>
-                <h1>My Project</h1>
+                <h1>My Portfolio</h1>
             </div>
             <div class="port1-btn">
                 <img src="images/Vector.png" alt="visit github icon">
@@ -209,7 +209,7 @@
                     </div>
                 </div>
             </div>
-            <<div class="test-card">
+            <div class="test-card">
                 <img src="images/Stars.png" alt="star of testifier">
                 <p>
                     "Passionate team leader with a great customers relations personality and 
@@ -245,8 +245,82 @@
     <!-- beginning of contact form section -->
     
     <contact>
-        
+        <div class="contact-ctn">
+            <div class="contact-holder">
+                <p>Get in Touch</p>
+                <h1>Contact Me</h1>
+                <p>Please correctly fill out all of the field to reach out to me with your essential information</p>
+
+            </div>
+            <form action="/submit-form" method="post">
+                <div class="form-wrapper1">
+                    <div class="form-group">
+                        <label for="fname">First Name:</label>
+                        <input type="text" id="fname" name="fname" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="lname">Last Name:</label>
+                        <input type="text" id="lname" name="lname" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone:</label>
+                        <input type="text" id="phone" name="phone">
+                    </div>
+                  </div>
+                  <div class="form-group2">
+                    <label for="cars">Choose a topic:</label>
+                    <select id="cars" name="topic" required>
+                        <option value="choose">Select one...</option>
+                        <option value="web_dev">Web Development</option>
+                        <option value="video_edit">Video Editing</option>
+                        <option value="social_mgr">Social Media Strategy and Management</option>
+                        <option value="digital_sol">Digital Solution</option>
+                    </select>
+                  </div>
+                  <div class="form-group3">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4"></textarea>
+                  </div>
+                  <div class="form-group4">
+                    <input type="checkbox" id="accept1" name="accept1" required>
+                    <label for="accept1">I accept the terms</label>
+                  </div>
+                  <div class="form-group5">
+                    <input type="submit" value="Submit">
+                  </div>
+            </form>
+
+        </div>
     </contact>
+
+    <!-- beginning of footer -->
+
+    <footer>
+        <div class="footer-ctn">
+            <div class="footer_img">
+                <img src="images/Victor_Logo-02-preview.png" alt="Victor Nwajei Aibangbe logo">
+            </div>
+            <div class="footer_nav">
+                <a href="#" target="_blank">Home</a>
+                <a href="#" target="_blank">Portfolio</a>
+                <a href="#" target="_blank">About me</a>
+                <a href="#" target="_blank">Testimonials</a>
+                <a href="#" target="_blank">Contact</a>
+            </div>
+            <div class="social_icon">
+                <a href="www.facebook.com"  target="_blank"><img src="images/Facebook.png" alt="facebook link"></a>
+                <a href="www.instagram.com"  target="_blank"><img src="images/Instagram.png" alt="instagram link"></a>
+                <a href="www.twitter.com"  target="_blank"><img src="images/Twitter.png" alt="twitter link"></a>
+                <a href="www.linkedin.com"  target="_blank"><img src="images/LinkedIn.png" alt="linkedin link"></a>
+                <a href="www.github.com"  target="_blank"><img src="images/github.png" alt="facebook link"></a>
+            </div>
+
+        </div>
+    </footer>
     
 
     <script src="js/main.js"></script>
