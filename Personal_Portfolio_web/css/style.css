@@ -21,7 +21,7 @@
   html {
     font-family: 'Roboto';
     font-size: 12px;
-    font-weight: 600;
+    font-weight: 400;
     color: var(--primary-colorBody);
     background-color: var(--primary-color);
   }
@@ -147,11 +147,12 @@ header {
     border-bottom: 2px solid rgba(0, 0, 0, 0.144);
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap-reverse;
     align-items: center;
 }
 .header1 {
     width: 47%;
-    height: 300px;
+    height: auto;
     overflow: hidden;
 
 }
@@ -217,6 +218,7 @@ skill {
     height: auto;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
     background-color: #ffffff;
 }
@@ -293,6 +295,7 @@ portfolio {
     height: auto;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .port-header {
     width: 25%;
@@ -348,7 +351,7 @@ portfolio {
 }
 .portcard-btn {
     width: 45%;
-    height: 30px;
+    height: auto;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -360,6 +363,7 @@ portfolio {
 }
 .portcard-btn > a {
     text-decoration: none;
+    text-align: center;
 }
 .portcard-btn > img {
     width: 30%;
@@ -404,10 +408,12 @@ testimony {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .test-card {
     border: 1px solid rgba(0, 0, 0, 0.136);
     width: 30%;
+    height: auto;
     display: flex;
     flex-direction: column;
     padding: 15px 15px 15px 15px;
@@ -595,6 +601,7 @@ form {
 
 .footer_nav a {
     text-decoration: none;
+    font-weight: 400;
 }
 
 .social_icon {
@@ -612,6 +619,7 @@ form {
 
 
 
+/* media query for tablet */
 
   @media(max-width: 800px) {
     .hideOnMobile{
@@ -620,9 +628,135 @@ form {
     .menu-btn{
         display: block;
     }
+    .header1 button {
+        width: 40%;
+    }
+    .skill-card {
+        width: 30%;
+    }
+    .port2-card {
+        width: 45%;
+    }
+    .port2-card:last-child {
+        margin-top: 25px;
+    }
+    .test-card {
+        width: 45%;
+    }
+    .test-card:last-child {
+        margin-top: 40px;
+    }
+    .testifier {
+        width: 75%;
+    }
+    .form-group {
+        margin-bottom: 20px;
+        width: 100%;
+    }
+    .footer_nav {
+        width: 70%;
+    }
   }
+
+/* media query for phone  */
+
   @media(max-width: 480px) {
     .sideBar{
         width: 100%;
+    }
+    .header1 {
+        width: 100%;
+        align-items: center;
+    }
+    .header2 {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+    .header1 button {
+        width: 30%;
+    }
+    skill {
+        align-items: center;
+    }
+    .skill-head {
+        align-items: center;
+    }
+    .skill-head h1 {
+        text-align: center;
+    }
+    .skill-card {
+        width: 100%;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    .skill-card:last-child {
+        margin-bottom: 0px;
+    }
+    .About-img {
+        display: none;
+    }
+    .About-content {
+        width: 100%;
+        align-items: center;
+    }
+    .port-1 {
+        flex-direction: column;
+    }
+    .port-header {
+        width: 50%;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    .port-header h1 {
+        font-size: 24px;
+        font-weight: 700;
+        text-align: center;
+    }
+    .port2-card {
+        width: 100%;
+        margin-bottom: 25px;
+    }
+    .port2-card:last-child {
+        margin-bottom: 0px;
+    }
+    .test-head {
+        align-items: center;
+    }
+    .test-head {
+        text-align: center;
+    }
+    .test-card {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .test-card:last-child {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    .testifier {
+        width: 75%;
+    }
+    .contact-holder p:last-child {
+        font-style: italic;
+        opacity: 100%;
+        color: var(--primary-colorRed);
+    }
+    .social_icon {
+        width: 40%;
+    }
+    .footer-ctn {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .footer_img {
+        display: none;
+    }
+    .footer_nav {
+        width: 100%;
+    }
+    .footer_nav a {
+        font-size: 8px;
     }
   }
