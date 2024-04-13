@@ -468,6 +468,7 @@ contact {
     display: flex;
     flex-direction: column;
     gap: 50px;
+    align-items: center;
 }
 
 .contact-holder {
@@ -557,6 +558,19 @@ form {
   }
   input[type="submit"]:hover {
     background-color: var(--primary-colorBody);
+  }
+
+  /* styling for map on the contact page */
+
+  gmp-map {
+    height: 450px;
+    width: 80%;
+    margin-left: 10%;
+  }
+
+  gmp-map:hover {
+    border: 2px solid var(--primary-colorBlue);
+    border-radius: 5px;
   }
 
 
