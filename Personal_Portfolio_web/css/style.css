@@ -93,6 +93,12 @@
     color: #ffffff;
     border: hidden;
   }
+
+  .active {
+    background-color: var(--primary-colorBlue);
+    color: #ffffff;
+    border: hidden;
+  }
   
   .menu-btn {
     border: 1px solid black;
@@ -708,57 +714,6 @@ main {
     display: grid;
     grid-gap: 25px;
     grid-template: auto / repeat(auto-fit, minmax(300px, 1fr));
-}
-.item{
-    width: 100%;
-    border-radius: 8px;
-    background-color: rgb(37, 37, 37);
-    padding: 15px;
-    overflow: hidden;
-}
-.item img{
-    width: 100%;
-    height: 300px;
-    border: 4px;
-}
-
-.item .title{
-    color: whitesmoke;
-    font-size: 2.5rem;
-    font-weight: 400;
-    margin: 20px 10px 0 0;
-}
-
-.item .item-data{
-    color: whitesmoke;
-    display: block;
-    margin-top: 10px;
-    font-size: 1.4rem;
-    letter-spacing: 0.05rem;
-    line-height: 2rem;
-}
-
-.item .flex-ctn{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.item .view-btn{
-    text-decoration: none;
-    background-color: #404041;
-    width: 130px;
-    height: auto;
-    text-align: center;
-    padding: 10px;
-    color: whitesmoke;
-    border-radius: 4px;
-    font-size: 1.4rem;
-    margin-top: 20px;
-    /* align-self: flex-start; */
-}
-.item .view-btn:hover{
-    opacity: 90%;
 }
 
 
